@@ -1,0 +1,35 @@
+{
+  "name": "tcp-router",
+  "version": "1.0.0",
+  "description": "nodejs tcp router with tls support. routes based on first bytes in package",
+  "main": "/lib/index.js",
+  "scripts": {
+    "prepublish": "tsc -d",
+    "start": "nodemon",
+    "test": "nodemon --watch **/*[sS]pec.ts --exec jasmine-ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xenira/tcp-router.git"
+  },
+  "keywords": [
+    "tcp",
+    "router",
+    "tls",
+    "packet"
+  ],
+  "author": "Xenira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xenira/tcp-router/issues"
+  },
+  "homepage": "https://github.com/Xenira/tcp-router#readme",
+  "devDependencies": {
+    "@types/jasmine": "^2.5.41",
+    "@types/node": "^7.0.4",
+    "jasmine": "^2.5.3",
+    "nodemon": "^1.11.0",
+    "ts-node": "^2.0.0",
+    "typescript": "^2.1.5"
+  }
+}
